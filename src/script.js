@@ -1610,7 +1610,7 @@ function correctRadius(radius) {
   return radius;
 }
 
-anvasReady = false;
+let canvasReady = false;
 
 document.addEventListener("DOMContentLoaded", () => {
   canvasReady = true;
@@ -1626,19 +1626,6 @@ window.addEventListener("mousemove", (e) => {
     pointers.push(pointer);
   }
   updatePointerMoveData(pointer, posX, posY);
-});
-
-window.addEventListener("mouseup", () => {
-  updatePointerUpData(pointers[0]);
-});
-
-window.addEventListener("keydown", (e) => {
-  if (e.code === "KeyP") {
-    config.PAUSED = !config.PAUSED;
-  }
-  if (e.key === " ") {
-    splatStack.push(parseInt(Math.random() * 20) + 5);
-  }
 });
 
 function updatePointerDownData(pointer, id, posX, posY) {
