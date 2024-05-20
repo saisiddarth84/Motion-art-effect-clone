@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motion Art Effect</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="src/output.css" />
+  <style>
+    html,
+    body {
+
+      background-color: rgb(3, 8, 37);
+    }
+
+    body {
+      margin: 0;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(90deg, #f87516 0%, #5e11ff 100%);
+    }
+
+    .gradient-bg-2 {
+      background: linear-gradient(180deg, #0D061F 0%, #251E35 100%);
+    }
+
+    .gradient-bg-3 {
+      background: linear-gradient(90deg, #5E11FF 30%, #F87516 100%);
+    }
+
+
+
+    .gradient-text {
+      background: linear-gradient(90deg, #f87516 0%, #5e11ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .font-sora {
+      font-family: "Sora", sans-serif;
+    }
+
+    .font-outfit {
+      font-family: "Outfit", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900">
+  <header class="relative w-full h-screen">
+    <canvas id="fluidCanvas" class="absolute inset-0 w-full h-full"></canvas>
+    <main class="absolute inset-0 pointer-events-none overflow-auto">
+      <section class="flex justify-center items-center pt-8">
+        <div class="relative w-3/4 max-xl:w-auto h-auto z-10 mx-auto p-4 pointer-events-auto">
+          <header class="flex justify-between">
+            <img src="assets/MotionArtEffect-logo.png" alt="Motion Art Effect Logo" />
+            <a href="https://codecanyon.net/item/motion-art-for-elementor-wordpress-plugin/48826891" target="_blank">
+              <button
+                class="py-2 px-4 text-lg hidden hover:bg-transparent border-2 md:block hover:text-white border-white bg-white font-outfit rounded-lg">
+                Purchase Now
+              </button>
+            </a>
+          </header>
+
+          <section class="flex flex-col md:flex-row md:gap-20 pt-12 pb-16 md:pt-32">
+            <div class="flex justify-center items-center md:block">
+              <div class="my-8 xl:w-[60%] md:my-0">
+                <h1 class="my-2 w-[70%] md:w-[100%] leading-[30px] font-sora font-semibold text-xl gradient-text">
+                  Transform Your Website
+                </h1>
+                <h2 class="text-[#EEE5FF] text-xl font-outfit">
+                  With Motion Art Effect
+                </h2>
+              </div>
+            </div>
+            <div class="md:w-[60%] min-[1350px]:w-[60%] xl:pl-20">
+              <h2
+                class="text-[#EEE5FF] text-4xl leading-[55px] md:text-[40px] md:font-medium md:leading-[60px] lg:text-[55px] lg:leading-[75px] min-[1350px]:text-[70px] min-[1350px]:leading-[85px] font-sora">
+                Attract Your Visitors Attention With Colorful
+                <span class="font-sora gradient-text">Motion Art Effect</span>
+              </h2>
+              <p class="text-[#EEE5FFBD] md:text-lg xl:text-[18px] font-outfit xl:w-[85%] my-8">
+                Unleash the power of creativity with Motion Art for Elementor -
+                your ultimate solution for seamlessly integrating captivating
+                animations into your website.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <p class="text-white text-center text-2xl font-sora pb-16">
+              Trusted by thousands of users around the world
+            </p>
+            <div
+              class="flex flex-col max-md:space-y-4 max-md:flex-col md:flex-row md:flex-wrap justify-between items-center gap-12">
+              <div class="flex items-center justify-center gap-8">
+                <img class="scale-110" src="assets/motionarteffect-img2.png" alt="User review image 2" />
+                <div class="flex flex-col items-center justify-center">
+                  <img class="max-md:scale-110" src="assets/motionarteffect-img4.png" alt="User review image 4" />
+                  <p class="text-slate-300 font-sora mt-4">
+                    <span class="font-bold">4.5</span> Score, 9 Reviews
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center gap-8">
+                <img class="scale-110" src="assets/motionarteffect-img1.png" alt="User review image 1" />
+                <div class="flex flex-col items-center justify-center">
+                  <img class="max-md:scale-110" src="assets/motionarteffect-img4.png" alt="User review image 4" />
+                  <p class="text-slate-300 font-sora mt-4">
+                    <span class="font-bold">4.5</span> Score, 9 Reviews
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center gap-8 max-2xl:mx-auto">
+                <img class="scale-110" src="assets/motionarteffect-img3.png" alt="User review image 3" />
+                <div class="flex flex-col items-center justify-center">
+                  <img class="max-md:scale-110" src="assets/motionarteffect-img4.png" alt="User review image 4" />
+                  <p class="text-slate-300 font-sora mt-4">
+                    <span class="font-bold">4.5</span> Score, 9 Reviews
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="flex max-md:flex-col items-center justify-between pt-32">
+            <div class="flex-col space-y-4 md:w-[60%]">
+              <h2 class="text-[#EEE5FF] font-sora font-medium text-[25px] md:text-[30px] leading-[45px] lg:text-[35px]">
+                Turn Your Cursor Into A Colorful Magic Wand & Charm Your
+                Visitors
+              </h2>
+              <p class="text-[#EEE5FFBD] text-[18px] leading-[30px] font-outfit">
+                Motion Art for Elementor is a groundbreaking plugin that
+                empowers you to effortlessly infuse your website with visually
+                stunning motion art elements.
+              </p>
+              <div class="flex items-center py-4 justify-center md:justify-start">
+                <a href="https://codecanyon.net/item/motion-art-for-elementor-wordpress-plugin/48826891" target="_blank">
+                  <button
+                    class="text-white flex items-center justify-center gap-8 rounded-3xl gradient-bg-3 px-[40px] py-[18px] font-sora text-xl md:text-2xl">
+                    <span class="font-thin">Purchase From Envato</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="flex items-center justify-center">
+              <img class="p-4" src="assets/motionarteffect-img5.png" alt="Motion Art Effect image 5">
+            </div>
+          </section>
+
+          <section class="flex items-center justify-center pt-16 max-md:pb-12">
+            <h2
+              class="text-[#EEE5FF] text-balance sm:w-[55%] leading-[55px] text-center font-medium text-[25px] font-sora md:text-[30px] xl:text-[35px] xl:leading-[55px]">
+              Apply On Any Section Or Enable For Whole Page
+            </h2>
+          </section>
+
+          <section class="flex max-md:flex-wrap items-center justify-center gap-8 mb-8">
+            <div
+              class="gradient-bg-2 p-8 rounded-3xl border-2 border-[#FFFFFF10] flex-col items-center justify-between">
+              <h3 class="text-[#EEE5FF] text-[20px] md:text-[25px] font-sora">Apply on Section</h3>
+              <p class="text-[#EEE5FFBD] leading-[30px] text-[18px] font-outfit pt-4 pb-8">Apply on section is a
+                game-changer, offering an unparalleled way to
+                manage applications directly from your website.</p>
+              <img src="assets/motionarteffect-img11.png" alt="Apply on section image">
+            </div>
+            <div
+              class="gradient-bg-2 border-2 border-[#FFFFFF10] p-8 flex-col items-center justify-center md:mt-40 rounded-3xl">
+              <h3 class="text-[#EEE5FF] text-[20px] md:text-[25px] font-sora">Apply On Page</h3>
+              <p class="text-[#EEE5FFBD] text-[18px] leading-[30px] font-outfit pt-4 pb-8">Take your website to new
+                heights with Motion Art for Elementor.
+                Embrace the power of motion and animation.
+              </p>
+              <img src="assets/motionarteffect-img10.png" alt="Apply on page image">
+            </div>
+          </section>
+
+          <section class="flex items-center justify-center gradient-bg-2 mb-16 rounded-3xl border-2 border-[#FFFFFF10]">
+            <div class="flex flex-col items-center justify-center space-y-4 py-12">
+              <h1 class="text-[#EEE5FF] font-sora text-[25px] max-md:text-[20px]">Supported by All Popular Browsers</h1>
+              <p class="text-[#EEE5FFBD] md:w-[70%] text-center font-outfit text-[18px] leading-[30px]">Rest assured,
+                Motion Art is designed to be compatible with all major web
+                browsers.
+              </p>
+              <img class="pt-4 scale-90" src="assets/motionarteffect-img8.png" alt="Supported browsers image">
+            </div>
+          </section>
+
+          <section class="flex justify-center items-center my-8">
+            <div class="text-center md:w-[60%] lg:w-[50%] xl:w-[40%]">
+              <h1
+                class="text-[#EEE5FF] leading-[45px] text-[25px] md:text-[30px] md:leading-3[50px] lg:text-[35px] lg:leading-[55px] font-sora">
+                An All-Round Plugin With Powerful Features</h1>
+              <p class="text-[#EEE5FFBD] leading-[30px] py-2 text-[16px] md:text-[18px]">Whether you're a seasoned web
+                designer or just starting out, Motion Art for
+                Elementor seamlessly integrates
+                with the Elementor platform, providing you with a seamless and intuitive experience.</p>
+            </div>
+          </section>
+
+          <section class="flex flex-wrap xl:flex-nowrap gap-8">
+            <article class="gradient-bg-2 max-xl:flex-grow rounded-2xl pr-4 border-2 border-[#FFFFFF10]">
+              <img class="mb-8" src="assets/motionarteffect-img9.png" alt="Light weight image">
+              <div class="pl-[35px] pb-12 flex-col space-y-4">
+                <h2 class="text-[#EEE5FF] text-[20px] md:text-[25px] md:leading-[45px] font-sora">Light Weight</h2>
+                <p class="text-[#EEE5FFBD] leading-[30px] text-[16px] md:text-[18px] font-outfit">Motion Art for Elementor is designed
+                  to be lightweight.</p>
+              </div>
+            </article>
+            <article class="gradient-bg-2 rounded-2xl max-xl:flex-grow pr-4 border-2 border-[#FFFFFF10]">
+              <img class="mb-8" src="assets/motionarteffect-img6.png" alt="100% responsive image">
+              <div class="pl-[35px] pb-12 flex-col space-y-4">
+                <h2 class="text-[#EEE5FF] text-[20px] md:text-[25px] md:leading-[45px] font-sora">100% Responsive</h2>
+                <p class="text-[#EEE5FFBD] leading-[30px] text-[16px] md:text-[18px] font-outfit">Create a consistent visual experience
+                  across all devices.</p>
+              </div>
+            </article>
+            <article class="gradient-bg-2 rounded-2xl pr-4 max-xl:flex-grow border-2 border-[#FFFFFF10]">
+              <img class="mb-8" src="assets/motionarteffect-img7.png" alt="User-friendly interface image">
+              <div class="pl-[35px] pb-12 flex-col space-y-4">
+                <h2 class="text-[#EEE5FF] text-[20px] md:text-[25px] md:leading-[45px] font-sora">User Friendly
+                  Interface</h2>
+                <p class="text-[#EEE5FFBD] leading-[30px] text-[16px] md:text-[18px] font-outfit">Ensure a smooth experience for both
+                  applicants and administrators.</p>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+
+      <footer class="gradient-bg max-lg:flex max-lg:justify-center max-lg:items-center font-outfit">
+        <div class="py-4 flex flex-col space-y-4 lg:flex-row-reverse items-center justify-between text-[#EEE5FFB8] text-[14px]">
+          <div class="flex justify-center items-center gap-12">
+            <a href="https://qodematrix.com/docs/motion-art-for-elementor/" target="_blank">
+              <div>Documentation</div>
+            </a>
+            <a href="https://support.qodematrix.com/" target="_blank">
+              <div>Support</div>
+            </a>
+          </div>
+          <div>© 2023 Copyright. All rights reserved by QodeMatrix</div>
+        </div>
+      </footer>
+    </main>
+  </header>
+</body>
+
+<script src="src/script.js"></script>
+
+</html>
