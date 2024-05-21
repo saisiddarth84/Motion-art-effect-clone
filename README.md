@@ -1,5 +1,4 @@
 # Motion Art Effect 
 
 ## 💻 Demo
-➡️ [motion-effect-clone.netlify.app/](https://motion-effect-clone.netlify.app/)
-
+➡️ <a href="https://motion-effect-clone.netlify.app/" target="_blank">motion-effect-clone.netlify.app</a>
